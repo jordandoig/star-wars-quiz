@@ -1,3 +1,7 @@
+// Color Palette
+$black: #000;
+$yellow: #ffe300;
+
 // Shared
 .centeredContainer {
   display: flex;
@@ -5,59 +9,103 @@
   align-items: center;
 }
 
+.halfContainer {
+  width: 75%;
+  height: 50%;
+}
+
+.bigText {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 // Index
 body {
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: $yellow;
+  background-color: $black;
 }
 
 // Main
 .main {
   width: 100%;
   height: 600px;
-  background-color: white;
-  color: black;
+  border-top: 5px solid $yellow;
+  border-bottom: 5px solid $yellow;
+}
+
+.optionsSection {
+  width: 50%;
+  height: 100%;
 }
 
 .optionsContainer {
-  width: 50%;
-  height: 100%;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.gifContainer {
+.optionRow {
+  width: 100%;
+  height: 25%;
+  background-color: $yellow;
+  color: $black;
+  font-weight: bold;
+  font-size: 30px;
+  border: 5px solid $black;
+}
+
+.gifSection {
   width: 50%;
   height: 100%;
+}
+
+.gif {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.answerContainer {
+  position: absolute;
+  width: 100vw;
+  height: 910px;
+  background: rgba(255,255,255,.25);
+}
+
+.answerModal {
+  background-color: $black;
+  border: 5px solid $yellow;
 }
 
 // Header
 .header {
   width: 100%;
   height: 150px;
-  background-color: black;
-  color: white;
 }
 
 // Footer
 .footer {
   width: 100%;
   height: 150px;
-  background-color: black;
-  color: white;
   flex-direction: column;
 }
 
 .link-box {
-  width: 100%;
+  width: 40%;
+  padding: 0 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .link-box a {
-  color: white;
+  color: $yellow;
   text-decoration: none;
 }
 
 .disclaimer-box {
-  width: 100%;
+  width: 80%;
+  padding: 0 10%;
+  text-align: center;
 }
